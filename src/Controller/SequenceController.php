@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SequenceController extends AbstractController
 {
     /**
-     * @Route("/sequence")
+     * @Route("/")
      * @param Request $request
      * @param StringHelper $stringHelper
      * @param SequenceCalculatorService $sequenceCalculator
