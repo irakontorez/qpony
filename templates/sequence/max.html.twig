@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Obliczenie największej liczby w ciągu</h1>
+    <p><b>Wynik</b></p>
+    <div class="sequence-result">
+    {% for sequenceResult in sequenceResults %}
+        <p>Dla n = {{ sequenceResult.length }} maksymalna wartość {{ sequenceResult.maxValue }}</p>
+    {% endfor %}
+    </div>
+
+    <a href="{{ path('app_sequence_index') }}" class="back-link">Wprowadź nowe dane</a>
+{% endblock %}

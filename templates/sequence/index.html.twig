@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Obliczenie największej liczby w ciągu</h1>
+    <p><b>Wprowadź zestaw test case'ów</b></p>
+    <p class="notice">nie więcej niż {{ max }}</p>
+    <p class="notice">Każdy test case znajduje się w osobnej linii i zawiera liczbę n (1 ≤ n ≤ 99 999)</p>
+    {% include 'form.html.twig' %}
+{% endblock %}
